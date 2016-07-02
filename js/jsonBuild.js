@@ -10,7 +10,7 @@ var jasonBuild = window.jasonBuild || {};
 //Object
 var jasonBuild = {
 
-	jsonFile: "data/info.txt",
+	jsonFile: "data/info.json",
 	index: null,
 	infoList: null,
 	outputDiv: null,
@@ -36,7 +36,7 @@ var jasonBuild = {
 		xmlhttp.onreadystatechange = function() {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			    jasonBuild.jsonArr = JSON.parse(xmlhttp.responseText);
-			    jasonBuild.styleJSON(jasonBuild.jsonArr);//
+			    jasonBuild.styleJSON(jasonBuild.jsonArr, jasonBuild.outputDiv);//
 			    console.log('JSON FILE ',jasonBuild.jsonArr);
 			    //return jasonBuild.jsonLoaded;
 		    }
@@ -46,14 +46,14 @@ var jasonBuild = {
 		xmlhttp.send();
 	},
 
-	styleJSON: function(arr){
+	styleJSON: function(arr, div){
 		var out = "";
-	    for(var i = 0; i < jasonBuild.jsonArr.length; i++) {
-	        out += '<a href="' + jasonBuild.jsonArr[i].url + '">' + 
-	        jasonBuild.jsonArr[i].display + '</a><br>';
+	    for(var i = 0; i < arr.length; i++) {
+	        out += '<a href="' + arr[i].url + '">' + 
+	        arr[i].display + '</a><br>' + '<img src="' + arr[i].image + '"/><br>';
 	    }
-	    jasonBuild.outputDiv.innerHTML = out;
-	    console.log('Output ',out, ' jsonArr ',jasonBuild.jsonArr);
+	    div.innerHTML = out;
+	    console.log('Output ',out, ' jsonArr ',arr);
 	},
 
 	run: function(arr){

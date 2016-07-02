@@ -1,22 +1,17 @@
+[
 {
-	"question1": "What is the name of the Paranoid Android in Douglas Adams’ Hitchhiker’s",
-	"answer1": [
-		"Marvin",
-		"Robor",
-		"Mr. Pickles"
-	],
-
-	"question2": "Who created Snoopy?",
-	"answer2": [
-		"Alvin Barnes",
-		"Jon Casey",
-		"Charles M. Schulz"
-	],
-
-	"question3": "Which measurement of speed is equivalent to one nautical mile per hour?",
-	"answer3": [
-		"Parsec",
-		"Knot",
-		"Fathom"
-	]
+"display": "JavaScript Tutorial",
+"url": "http://www.w3schools.com/js/default.asp",
+"image": "../img/IMG_20160701_2238201.jpg"
+},
+{
+"display": "HTML Tutorial",
+"url": "http://www.w3schools.com/html/default.asp",
+"image": "../img/IMG_20160701_2238071.jpg"
+},
+{
+"display": "CSS Tutorial",
+"url": "http://www.w3schools.com/css/default.asp",
+"image": "../img/IMG_20160701_2237461.jpg"
 }
+]
