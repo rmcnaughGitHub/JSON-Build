@@ -1,22 +1,22 @@
-var quiz = {
+{
 	"question1": "What is the name of the Paranoid Android in Douglas Adams’ Hitchhiker’s",
 	"answer1": [
-		"Marvin", 
+		"Marvin",
 		"Robor",
 		"Mr. Pickles"
 	],
 
-	"question2":"Who created Snoopy?",
+	"question2": "Who created Snoopy?",
 	"answer2": [
-		"Alvin Barnes", 
+		"Alvin Barnes",
 		"Jon Casey",
 		"Charles M. Schulz"
 	],
 
-	"question3":"Which measurement of speed is equivalent to one nautical mile per hour?",
+	"question3": "Which measurement of speed is equivalent to one nautical mile per hour?",
 	"answer3": [
-		"Parsec", 
+		"Parsec",
 		"Knot",
 		"Fathom"
 	]
-};
+}
